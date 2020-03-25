@@ -15,5 +15,19 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/mytext"
+    app:layout_constraintTop_toBottomOf="@+id/btn_theme"
+    android:text="Ths i si my testing add theme we are running new themfhkfjk check your new marquee theme selected to take"
+    android:singleLine="true"
+    android:ellipsize ="marquee"
+    android:fadingEdge ="horizontal"
+    android:marqueeRepeatLimit ="marquee_forever"
+    android:scrollHorizontally ="true"
+    android:textSize="18sp"
+    android:padding="5dp"
+    android:textColor="#000"
+    ></TextView>
 </androidx.constraintlayout.widget.ConstraintLayout>

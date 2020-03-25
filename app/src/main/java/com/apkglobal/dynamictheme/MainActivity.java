@@ -7,17 +7,20 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_theme;
     SharedPreferences sp;
     SharedPreferences.Editor ed;
-
+    TextView mytext;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTheme(getFlag() ? R.style.AppTheme : R.style.AppThemeDark);
         setContentView(R.layout.activity_main);
+        mytext  = findViewById(R.id.mytext);
+        mytext.setSelected(true);
         btn_theme = findViewById(R.id.btn_theme);
         btn_theme.setOnClickListener(new View.OnClickListener() {
             @Override
